@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>Secret Diary</title>
+   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Monoton&family=Parisienne&display=swap" rel="stylesheet">
+   <link href="Secretdiary.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-page">
+        <h2>Secret Diary</h2>
+    <div class="form">
+        <form class="registration-form">
+            <h1>Sign Up</h1>
+        <input type="text" placeholder="User name" name="username" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <a href="Diary.html"></a>
+        <button><p class="first"><a href="Diary.html">Register</a></p>
+        </button></a>
+        <p class="message">Already Registered? <a href="#">Log in</a>
+        </p>
+        </form>
+        <form class="login-form">
+        <input type="text" placeholder="User name" name="username" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <button>
+        <p class="first"><a href="Diary.html">Log in</a></p>
+        </button>
+        <p class="message">Not Registered?  <a href="#">Register Here</a>
+        </p>
+        </form>
+    </div>    
+    </div>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+    $('.message a').click(function(){
+    $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+    });
+    </script>
+</body>
+</html>   
+
+      
